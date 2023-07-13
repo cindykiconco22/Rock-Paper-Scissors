@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paper</title>
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <h3>Rock Paper Scissors</h3>
+            <div id="buttons">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+                <button id="reset" onclick="location.reload()">Reset</button>
+            </div>
+
+            <!--Final win value holder -->
+            <div id="final_win" style="display: none; text-align:center;">
+                <h2 id="final_statement"></h2>
+                <button id="reset_game" onclick="location.reload()">Restart</button>
+            </div>
+
+            <div id="choices">
+                <p>User: <span id="userValue">_</span></p>&nbsp;&nbsp;&nbsp;   
+                <p>Computer: <span id="computerValue">_</span></p>
+            </div>
+            <p id="currentPlayShow">Choose a goal for the next game!</p>
+        </div>
+        <div id="bottom">
+            <div id="left">
+                <h4 id="userScore"></h4>
+                <h3>User</h3>
+                <button id="userClickPlay">Click to play</button>
+                <h2 id="result"></h2>
+            </div>
+            <div id="right">
+                <h4 id="computerScore"></h4>
+                <h3>Computer</h3>
+                <button value="paper" disabled>Computer will automatically play after user clicks start</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

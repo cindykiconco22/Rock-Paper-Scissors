@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: aliceblue;
+}
+#top #buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+#top #buttons button{
+    padding: 12px;
+    cursor: pointer;
+    background-color: tomato;
+    border:2px solid rgba(180, 126, 116, 0.8);
+    border-radius: 4px;
+    
+}
+
+#top #buttons #reset{
+    background-color: whitesmoke;
+}
+#top #buttons #reset:hover{
+    color: rgb(150, 16, 16);
+}
+
+#top #buttons button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#top #buttons button:active{
+    background-color:tomato;
+    color: white;
+}
+
+#currentPlayShow{
+    color: blueviolet;
+    font-weight: bold;
+
+}
+
+#userClickPlay:hover{
+    background-color: rgb(106, 36, 25);
+    border:2px solid rgba(176, 162, 160, 0.8);
+    color: whitesmoke;
+}
+
+#userClickPlay:active{
+    background-color: cadetblue;
+    border:2px solid rgba(176, 162, 160, 0.8);
+}
+
+#bottom{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#bottom #left, #right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left{
+    background-color: beige;
+}
+#left button{
+    background-color: cadetblue;
+    padding: 15px;
+    border:2px solid rgba(176, 162, 160, 0.8);
+    border-radius:4px;
+    cursor: pointer;
+}
+#left h3{
+    color: brown;
+}
+#right{
+    background-color: blanchedalmond;
+}
+#right button{
+    background-color: rgb(156, 111, 104);
+    padding: 15px;
+    border:2px solid rgba(176, 162, 160, 0.8);
+    border-radius:4px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#choices{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#choices #userValue, #computerValue{
+    color: blueviolet;
+}
+
+#final_win{
+    color: rgb(187, 4, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#final_win #reset_game{
+    padding: 12px;
+    cursor: pointer;
+    background-color: rgb(252, 248, 248);
+    border:2px solid rgba(180, 126, 116, 0.8);
+    border-radius: 4px;
+    font-weight: bold; 
+}
